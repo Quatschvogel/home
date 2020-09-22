@@ -7,10 +7,7 @@
 	let tog = false;
 
 	afterUpdate(() => {
-		setTimeout(toggle, 500)
-		function toggle() {
-			tog = true; 
-		}
+		tog = true; 
 	});
 
 	onDestroy(() => {

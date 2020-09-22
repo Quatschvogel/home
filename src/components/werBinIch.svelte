@@ -6,7 +6,7 @@
 	import { onMount, onDestroy, afterUpdate } from 'svelte';
 	let tog = false;
 
-	afterUpdate(() => {
+	onMount(() => {
 		setTimeout(toggle, 300)
 		function toggle() {
 			tog = true; 

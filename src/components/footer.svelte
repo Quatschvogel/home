@@ -5,7 +5,7 @@
     import { onMount, onDestroy, afterUpdate } from 'svelte';
 	let tog = false;
 
-	afterUpdate(() => {
+	onMount(() => {
 		tog = true; 
 	});
 

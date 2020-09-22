@@ -7,7 +7,7 @@
 	let tog = false;
 
 	onMount(() => {
-		setTimeout(toggle, 300)
+		setTimeout(toggle, 500)
 		function toggle() {
 			tog = true; 
 		}

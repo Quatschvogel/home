@@ -28,6 +28,7 @@
 <!--------------------------------------------------------------------------->
 <!----------------------- HTML / MARKUP DER COMPONENTE ---------------------->
 <!--------------------------------------------------------------------------->
+<div class="h-full">
 {#if tog}
 <div class="py-12 sm:py-16 xl:py-20 xl:px-10 xl:w-5/6 px-4 w-11/12 rounded-lg bg-gray-200 mx-auto mt-4 flex" in:fade="{{x:0, duration: 1000}}">	
 	<div class="block mx-auto w-full space-y-8">
@@ -44,3 +45,4 @@
 	</div>
 </div>
 {/if}
+</div>

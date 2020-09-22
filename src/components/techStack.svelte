@@ -3,10 +3,10 @@
 <!--------------------------------------------------------------------------->
 <script>
 	import { fade, fly } from 'svelte/transition';
-	import { onMount, onDestroy } from 'svelte';
+	import { onMount, onDestroy, afterUpdate} from 'svelte';
 	let tog = false;
 
-	onMount(() => {
+	afterUpdate(() => {
 		setTimeout(toggle, 500)
 		function toggle() {
 			tog = true; 

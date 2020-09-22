@@ -2,7 +2,19 @@
 <!------------------------ JAVASCRIPT DER COMPONENTE ------------------------>
 <!--------------------------------------------------------------------------->
 <script>
+    import { onMount, onDestroy, afterUpdate } from 'svelte';
+	let tog = false;
 
+	afterUpdate(() => {
+		setTimeout(toggle, 500)
+		function toggle() {
+			tog = true; 
+		}
+	});
+
+	onDestroy(() => {
+		tog = false;
+	});
 </script>
 
 <!--------------------------------------------------------------------------->
@@ -15,6 +27,7 @@
 <!--------------------------------------------------------------------------->
 <!----------------------- HTML / MARKUP DER COMPONENTE ---------------------->
 <!--------------------------------------------------------------------------->
+{#if tog}
 <footer class="w-full h-auto bg-gray-800 mt-4 rounded-t-lg align-bottom relative bottom-0">
     <div class="block w-full">
         <div class="flex justify-between">
@@ -23,3 +36,4 @@
         </div>
     </div>
 </footer>
+{/if}

@@ -7,7 +7,10 @@
 	let tog = false;
 
 	onMount(() => {
-		tog = true; 
+		setTimeout(toggle, 500)
+		function toggle() {
+			tog = true; 
+		}
 	});
 
 	onDestroy(() => {

@@ -6,7 +6,14 @@
 	let tog = false;
 
 	afterUpdate(() => {
-		tog = true; 
+        setTimeout(toggle, 400)
+        function toggle() {
+            tog = true; 
+        }
+	});
+
+	onDestroy(() => {
+		tog = false;
 	});
 </script>
 

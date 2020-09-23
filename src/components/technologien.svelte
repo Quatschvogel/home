@@ -3,8 +3,14 @@
 <!--------------------------------------------------------------------------->
 <script>
 	import { fade, fly } from 'svelte/transition';
-	import { onMount, onDestroy, afterUpdate } from 'svelte';
+	import {onMount, beforeUpdate, afterUpdate, onDestroy} from 'svelte';
 	let tog = false;
+	let a = 0;
+	afterUpdate(() => {
+		if (process.browser && window) {
+			a = 1;
+		}
+	});
 </script>
 
 <!--------------------------------------------------------------------------->

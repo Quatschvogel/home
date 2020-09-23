@@ -6,6 +6,11 @@
 	import { onMount, onDestroy, afterUpdate } from 'svelte';
 	let tog = false;
 	let y;
+	onMount(() => {
+		if (process.browser == true) {
+			tog = true;
+		}
+	})
 </script>
 
 <!--------------------------------------------------------------------------->
@@ -25,7 +30,7 @@
 		<p class="sm:text-3xl text-xl font-bold">Wer Bin ich?</p>
 	</div>
 	{#if tog}
-	<div class="bg-transparent text-left rounded-lg border-gray-900 border-2" in:fly="{{y: -50, duration: 400}}">
+	<div class="bg-transparent text-left rounded-lg border-gray-900 border-2" in:fly="{{y: -50, duration: 1000}}">
 		<p class="sm:text-xl text-lg font-bold p-4">
 			Ich bin ein Frontend und Backend Softwareentwickler für Websiten und APP´s. Für ihren Erfolg setzte ich
 			auf moderne technologien um mit dem Puls der Zeit zu gehen. Dieser Einsatz ist auch für ihr Business

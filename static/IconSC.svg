@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="309" height="305" viewBox="0 0 309 305">
+  <defs>
+    <filter id="Ellipse_1" x="0" y="0" width="309" height="305" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-color="#2077ce" flood-opacity="0.82"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Icon" transform="translate(-39 18)">
+    <g transform="matrix(1, 0, 0, 1, 39, -18)" filter="url(#Ellipse_1)">
+      <g id="Ellipse_1-2" data-name="Ellipse 1" transform="translate(45 45)" fill="#2077ce" stroke="#bd9a6e" stroke-width="3">
+        <ellipse cx="109.5" cy="107.5" rx="109.5" ry="107.5" stroke="none"/>
+        <ellipse cx="109.5" cy="107.5" rx="108" ry="106" fill="none"/>
+      </g>
+    </g>
+    <path id="Pfad_1" data-name="Pfad 1" d="M190.434-19.133l3.188,4.208L198-7.523,203.081,3.42,207,16.443l1.329,9.232,1.083,9.251-.428,12.438-2,13.254L204,72H0Z" transform="translate(92 95)" fill="#bd9a6e"/>
+    <text id="C." transform="translate(174 196)" fill="#fff" font-size="60" font-family="Zapfino" style="mix-blend-mode: exclusion;isolation: isolate"><tspan x="0" y="0">C.</tspan></text>
+    <text id="S." transform="translate(118 117)" fill="#fff" font-size="60" font-family="Zapfino" style="mix-blend-mode: exclusion;isolation: isolate"><tspan x="0" y="0">S.</tspan></text>
+  </g>
+</svg>

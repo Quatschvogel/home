@@ -8,8 +8,8 @@
 	let y;
 	let a = 0;
 	afterUpdate(() => {
-		if (a <4) {
-			a += 1;
+		if (process.browser) {
+			a = 1;
 		}
 	});
 

@@ -3,14 +3,15 @@
 <!--------------------------------------------------------------------------->
 <script>
 	import { fade, fly } from 'svelte/transition';
-	import { onMount, onDestroy, afterUpdate } from 'svelte';
+	import {onMount, beforeUpdate, afterUpdate, onDestroy} from 'svelte';
 	let tog = false;
 	let y;
-	onMount(() => {
-		if (process.browser == true) {
-			tog = true;
-		}
-	})
+	let a = 0;
+	beforeUpdate(() => {
+		a += 1;
+	});
+
+	
 </script>
 
 <!--------------------------------------------------------------------------->
@@ -29,7 +30,7 @@
 	<div on:click={() => {tog = !tog}} class="bg-transparent text-center rounded-lg border-gray-900 border-2 cursor-pointer hover:bg-gray-400" >
 		<p class="sm:text-3xl text-xl font-bold">Wer Bin ich?</p>
 	</div>
-	{#if tog}
+	{#if a >= 2}
 	<div class="bg-transparent text-left rounded-lg border-gray-900 border-2" in:fly="{{y: -50, duration: 1000}}">
 		<p class="sm:text-xl text-lg font-bold p-4">
 			Ich bin ein Frontend und Backend Softwareentwickler für Websiten und APP´s. Für ihren Erfolg setzte ich

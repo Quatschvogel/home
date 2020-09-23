@@ -8,7 +8,7 @@
 	let y;
 	let a = 0;
 	afterUpdate(() => {
-		if (process.browser) {
+		if (process.browser && window) {
 			a = 1;
 		}
 	});

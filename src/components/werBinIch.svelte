@@ -57,7 +57,7 @@
 {#if tog == true}
 <div class="py-12 sm:py-16 xl:py-20 xl:px-10 xl:w-5/6 px-4 w-11/12 rounded-lg bg-gray-200 mx-auto mt-8 flex">	
 	<div class="block mx-auto w-full space-y-8">
-	<div on:click={() => {tog = !tog}} class="bg-transparent text-center rounded-lg border-gray-900 border-2 transitionLR" >
+	<div class="bg-transparent text-center rounded-lg border-gray-900 border-2 transitionLR" >
 		<p class="sm:text-3xl text-xl font-bold">Wer Bin ich?</p>
 	</div>
 	<div class="bg-transparent text-left rounded-lg border-gray-900 border-2 transitionRL">

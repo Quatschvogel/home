@@ -2,17 +2,6 @@
 <!------------------------ JAVASCRIPT DER COMPONENTE ------------------------>
 <!--------------------------------------------------------------------------->
 <script>
-	import { fade, fly } from 'svelte/transition';
-	import { onMount, onDestroy, afterUpdate} from 'svelte';
-	let tog = false;
-
-	afterUpdate(() => {
-			tog = true; 
-	});
-
-	onDestroy(() => {
-		tog = false;
-	});
 </script>
 
 <!--------------------------------------------------------------------------->
@@ -27,7 +16,6 @@
 <!--------------------------------------------------------------------------->
 
 <div class="h-full">
-{#if tog}
 <div class="py-12 sm:py-16 xl:py-20 xl:px-10 xl:w-5/6 px-4 w-11/12 rounded-lg bg-gray-200 mx-auto mt-4 flex">	
 	<div class="block mx-auto w-full space-y-8">
 	<div class="bg-transparent text-center rounded-lg border-gray-900 border-2">
@@ -48,5 +36,4 @@
 	</div>
 	</div>
 </div>
-{/if}
 </div>

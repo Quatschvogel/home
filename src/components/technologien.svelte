@@ -18,12 +18,25 @@
 <!--------------------------------------------------------------------------->
 <style>
 
+	.transition {
+		animation: flyin 4s ease forwards;
+	}
+
+	@keyframes flyin {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
 </style>
 
 <!--------------------------------------------------------------------------->
 <!----------------------- HTML / MARKUP DER COMPONENTE ---------------------->
 <!--------------------------------------------------------------------------->
 {#if a >= 1}
+<div class="transition">Hallllllloooo</div>
 <div class="py-12 sm:py-16 xl:py-20 xl:px-10 xl:w-5/6 px-4 w-11/12 rounded-lg bg-gray-200 mx-auto mt-4 flex" in:fly="{{y: -100, duration: 1000}}">	
 	<div class="block mx-auto w-full space-y-8">
 	<div on:click={() => {tog = !tog}} class="bg-transparent text-center rounded-lg border-gray-900 border-2 cursor-pointer hover:bg-gray-400">

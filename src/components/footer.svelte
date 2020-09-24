@@ -11,10 +11,6 @@
             tog = true; 
         }
 	});
-
-	onDestroy(() => {
-		tog = false;
-	});
 </script>
 
 <!--------------------------------------------------------------------------->
@@ -28,7 +24,7 @@
 <!----------------------- HTML / MARKUP DER COMPONENTE ---------------------->
 <!--------------------------------------------------------------------------->
 {#if tog}
-<footer class="w-full h-auto bg-gray-800 mt-4 rounded-t-lg align-bottom relative bottom-0">
+<footer class="w-full h-auto bg-gray-800 mt-4 align-bottom relative bottom-0">
     <div class="block w-full">
         <div class="flex justify-between">
             <img class="py-2 h-20 pl-5" alt="logo" src="logo-192.png"/>

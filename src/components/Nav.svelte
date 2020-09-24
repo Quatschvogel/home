@@ -19,7 +19,6 @@
 	}
 	.transBackground {
 		transition: background-color 100ms;
-		transition: border-radius 500ms;
 	}
 	.transPadding {
 		transition: margin 200ms ease-in-out;
@@ -31,7 +30,7 @@
 <!--------------------------------------------------------------------------->
 <svelte:window bind:scrollY={y}/>
 
-<header class="{y < 8 ? 'bg-transparent' : 'bg-gray-800 rounded-b-lg '}  items-center flex justify-between py-4 sticky top-0 z-10 transBackground sm:py-6">
+<header class="{y < 8 ? 'bg-transparent' : 'bg-gray-800'}  items-center flex justify-between py-4 sticky top-0 z-10 transBackground sm:py-6">
 	<div class="{y < 8 ? 'text-black bg-red-500 hover:bg-red-700 ml-10' : 'text-white hover:bg-gray-800 ml-4'} text-lg sm:text-2xl font-semibold transPadding rounded-full px-4">
 		Logo
 	</div>

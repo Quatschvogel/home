@@ -55,12 +55,12 @@
 <!--------------------------------------------------------------------------->
 
 {#if tog == true}
-<div class="py-12 sm:py-16 xl:py-20 xl:px-10 xl:w-5/6 px-4 w-11/12 rounded-lg bg-gray-200 mx-auto mt-8 flex">	
+<div class="py-12 sm:py-16 xl:py-20 xl:px-10 xl:w-5/6 px-4 w-11/12 rounded-lg bg-gray-800 text-white mx-auto mt-8 flex">	
 	<div class="block mx-auto w-full space-y-8">
-	<div class="bg-transparent text-center rounded-lg border-gray-900 border-2 transitionLR" >
+	<div class="bg-transparent text-center rounded-lg border-white border-2 transitionLR" >
 		<p class="sm:text-3xl text-xl font-bold">Wer Bin ich?</p>
 	</div>
-	<div class="bg-transparent text-left rounded-lg border-gray-900 border-2 transitionRL">
+	<div class="bg-transparent text-left rounded-lg border-white border-2 transitionRL">
 		<p class="sm:text-xl text-lg font-bold p-4">
 			Ich bin ein Frontend und Backend Softwareentwickler für Websiten und APP´s. Für ihren Erfolg setzte ich
 			auf moderne technologien um mit dem Puls der Zeit zu gehen. Dieser Einsatz ist auch für ihr Business

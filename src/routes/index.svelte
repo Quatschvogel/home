@@ -6,15 +6,6 @@
 	import Technologie from '../components/technologien.svelte';
 	import TechStack from '../components/techStack.svelte';
 
-	let cont = [
-		{id: 1, name: "Ich bin nummer 1"},
-		{id: 2, name: "Hallo"},
-		{id: 3, name: "Hallo"},
-		{id: 3, name: "Hallo"},
-		{id: 3, name: "Hallo"}
-	]
-
-
 </script>
 
 <!--------------------------------------------------------------------------->
